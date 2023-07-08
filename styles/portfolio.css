@@ -160,4 +160,11 @@ main {
 
 .download-cv {
   text-align: center;
+  margin-top: 50px;
+}
+
+/* footer styles */
+footer {
+  display: flex;
+  background: ;
 }
