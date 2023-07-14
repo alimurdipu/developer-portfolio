@@ -190,3 +190,58 @@ textarea {
   border: 0;
   width: 100%;
 }
+
+/* responsive styles */
+
+/* Mobile devices */
+.hide{
+  display: none;
+}
+
+@media screen and (max-width:576px) {
+  .header{
+    background-image: none;
+  }
+  nav,.banner,.skill-container, .resume-container, .about-info-container, nav > ul {
+    flex-direction: column;
+  }
+  nav > ul{
+    gap: 10px;
+    margin: 0;
+  }
+  .banner-content,.banner-description,.section-description {
+    width: 100%;
+  }
+  .btn-primary{
+    margin-bottom: 15px;
+  }
+  .banner .profile-pic {
+    width: 100%;
+  }
+  .banner,
+  #what-i-do-description{
+    padding: 20px;
+  }
+  footer, .about{
+    padding: 10px;
+    flex-direction: column
+  }
+  .footer-column{
+    width: 100%;
+  }
+  .contact input [type="text"],.contact input [type="email"]{
+    width: 80%;
+  }
+  
+}
+@media screen and (min-width:576px) and (max-width:960px) {
+  .skill-container, .resume-container, .footer, .banner .profile-pic {
+    flex-direction: column;
+  }
+  footer, .about{
+    padding: 30px;
+  }
+  .banner .profile-pic {
+    width: 100%;
+  }  
+}
